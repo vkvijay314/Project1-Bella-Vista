@@ -109,7 +109,7 @@ body {
 }
 
 .hero-button a{
-   font-family:cursive;
+   font-family: Arial, Helvetica, sans-serif;
    text-decoration: none;
    gap:2rem;
    color:#ede0d4;
@@ -553,6 +553,7 @@ transform: translateY(-2px);
     display: flex;
   }
 }
+
 
 
 
