@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Bella Vista - Authentic Italian Cuisine serving you in the heart of our city.">
+        <title>Bella Vista - Authentic Italian Cuisine</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon"
+            href="/FRONTEND-Projects/Bella-Vista/images/favicon.ico"
+            type="image/x-icon">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <nav class="navbar">
+                    <div class="logo">
+                        <h1>Bella Vista</h1>
+                        <span class="tagline">Authentic Italian Cuisine</span>
+                    </div>
+                    <ul class="nav-link">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#aboutus">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section id="home" class="hero">
+                <div class="hero-content">
+                    <h2>Welcome to Bella Vista</h2>
+                    <p>Experience the authentic taste of Italian cuisine in the
+                        heart of the city.</p>
+                    <div class="hero-button">
+                        <a href="#menu" id="pri">View Menu</a>
+                        <a href="#contact" id="sec">Make Reservation</a>
+                    </div>
+                </div>
+            </section>
+            <section id="menu" class="menu">
+                <div class="container">
+                    <h2 class="section-title">Our Menu</h2>
+                    <p class="section-subtitle">“Savor tradition, taste passion,
+                        Italy on your plate every bite.”</p>
+                    <div class="menu-categories">
+                        <div class="menu-category">
+                            <h3>Appetizers</h3>
+                            <div class="menu-items">
+                                <div class="item">
+                                    <div class="menu-item-info">
+                                        <h4>1. Bruschetta al Pomodoro</h4>
+                                        <p>Toasted bread topped with fresh
+                                            tomato, garlic, basil.</p>
+                                    </div>
+                                    <span class="price">$12</span>
+                                </div>
+                                <div class="item">
+                                    <div class="menu-item-info">
+                                        <h4>2. Caprese Salad</h4>
+                                        <p>Mozzarella, tomatoes, basil, olive
+                                            oil, light refreshing.</p>
+                                    </div>
+                                    <span class="price">$10</span>
+                                </div>
+                                <div class="item">
+                                    <div class="menu-item-info">
+                                        <h4>3. Arancini</h4>
+                                        <p>Crispy fried rice balls stuffed with
+                                            cheese, flavorful filling.</p>
+                                    </div>
+                                    <span class="price">$18</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="about">
+                <div class="container">
+                    <h2 class="section-title">About Bella Vista</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <h3>Our Story</h3>
+                            <p>Bella Vista is a picturesque
+                                retreat, known for its breathtaking views,
+                                serene
+                                landscapes, and inviting atmosphere. Nestled in
+                                nature’s
+                                beauty, it offers a perfect escape for travelers
+                                seeking
+                                tranquility, comfort, and charm away from the
+                                bustle of
+                                city life.</p>
+                            <p>With cozy accommodations, delicious cuisine, and
+                                stunning sunsets, Bella Vista creates
+                                unforgettable memories. It’s a haven for
+                                relaxation, romance, and rejuvenation, where
+                                every moment feels truly magical.</p>
+
+                        </div>
+                        <div class = "about-image">
+                        <img src="/FRONTEND-Projects/Bella-Vista/images/pexels-cottonbro-5529903.jpg" alt="image">
+                        </div>
+                       </div>
+                       
+                </div>
+            </section>
+            <section id="contact" class="contact">
+                <div class="container">
+                    <h2 class="section-title">Contact Us</h2>
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <h3>Get in Touch</h3>
+                            <strong>Address:</strong>
+                            <p>123 Harmony Lane, Green Valley, New Delhi – 110001</p>
+                            <strong>Phone:</strong>
+                            <p>+91 98765 43210</p>
+                            <strong>E-mail:</strong>
+                            <p>contact@bellavistaexample.com</p>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Make Your Reservation</h3>
+                        
+                        <form action="">
+                            <div class="form-group"><label for="name">Full Name:</label>
+                            <input type="text" id = "name" name = "name" required>
+                            </div>
+                             <div class="form-group"><label for="email">E-mail</label>
+                            <input type="email" id = "email" name = "email" required>
+                            </div>
+                             <div class="form-group"><label for="phone">Phone:</label>
+                            <input type="tel" id = "phone" name = "phone">
+                            </div>
+                             <div class="form-group"><label for="date">Reservation Date:</label>
+                            <input type="date" id = "date" name = "date" required>
+                            </div>
+                             <div class="form-group"><label for="time">Time:</label>
+                            <select name="time" id="time" required>
+                            <option value="">Select Time:</option>
+                            <option value="6:00">6:00am</option>
+                            <option value="8:00">8:00am</option>
+                            <option value="9:00">9:00am</option>
+                            <option value="10:00">10:00am</option></select>
+                            </div>
+                            <div class="form-group"><label for="number">Guest:</label>
+                            <select name="number" id="number" required>
+                            <option value="">Select Number of Guest:</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="4+">4+</option>
+                        </select>
+                        <div class="form-group"><label for="msg">Special Request:</label>
+                            <textarea name="msg" id="msg" rows="4" placeholder="Enter Your Request here..."></textarea>
+                            </div>
+
+                            <button type = "submit" class ="button-sub">Submit Reservation</button> 
+                        </form>
+                       
+                    </div>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+  <div class="container footer-content">
+
+    <!-- Bella Vista Info -->
+    <div class="footer-section">
+      <h3>Bella Vista</h3>
+      <p>Authentic Italian cuisine in the heart of the city.<br>
+         Experience the taste of Italy with every bite.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Opening Hours -->
+    <div class="footer-section">
+      <h4>Opening Hours</h4>
+      <p>Monday - Thursday: 11:00 AM - 10:00 PM</p>
+      <p>Friday - Saturday: 11:00 AM - 11:00 PM</p>
+      <p>Sunday: 12:00 PM - 9:00 PM</p>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="www.google.com">Instagram</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+    </body>
+</html>
