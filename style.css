@@ -503,6 +503,57 @@ transform: translateY(-2px);
   }
 }
 
+/* Hide the checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon */
+.menu-icon {
+  display: none; /* hide by default on desktop */
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* show hamburger on mobile */
+  }
+
+  .nav-link {
+    display: none; /* hide nav links initially */
+    flex-direction: column;
+    width: 100%;
+    background: #073b4c;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1rem 0;
+    z-index: 999;
+  }
+
+  .nav-link li {
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  .nav-link a {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  /* Show nav when checkbox is checked */
+  #menu-toggle:checked ~ .nav-link {
+    display: flex;
+  }
+}
+
 
 
 
